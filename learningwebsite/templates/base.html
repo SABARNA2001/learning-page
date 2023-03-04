@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Master and Student Task Executor</title>
+	<style>
+		body {
+			background-image: url('https://image.lexica.art/full_jpg/38018175-c509-42e5-acda-8afcedad3987');
+			background-size: cover;
+			background-position: center;
+		}
+
+		nav {
+			background-color: rgba(0, 0, 0, 0.7);
+			padding: 20px;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		nav li {
+			float: left;
+		}
+
+		nav li a {
+			display: block;
+			color: #d2deff;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		nav li a:hover {
+			background-color: #333;
+			color: #ffffff;
+		}
+
+		nav li:last-child {
+			float: right;
+		}
+
+        nav li:last-child {
+			float: right;
+		}
+
+		.banner {
+			margin: 100px auto;
+			text-align: center;
+		}
+
+		.banner h1 {
+			font-size: 50px;
+			color: #fff;
+			animation: fadeIn 2s;
+		}
+
+		.banner p {
+			font-size: 25px;
+			color: #fff;
+			animation: fadeIn 2s;
+		}
+
+		@keyframes fadeIn {
+			from {opacity: 0;}
+			to {opacity: 1;}
+		}
+	</style>
+</head>
+<body>
+	<nav>
+	<ul>
+		<li><a href="#">students_dashbord</a></li>
+		<li><a href="#">teachers_dashbord</a></li>
+		<li><a href="#">pdf for previous examinatios</a></li>
+		<li><a href="{% url 'login' %}">user login</a></li>
+        <li><a href="{% url 'signup' %}">sign up</a></li>
+	</ul>
+</nav>
+
+	
+
+	<div class="banner">
+		<h1>Master and Student Task Executor</h1>
+		<p>We help students and masters collaborate and complete their tasks</p>
+	</div>
+
+</body>
+</html>

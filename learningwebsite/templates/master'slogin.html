@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>log in</title>
+	<style>
+		body {
+			background-image: url('https://image.lexica.art/full_jpg/2864d282-1c29-4032-bb17-2c0aa8b8ff86');
+			background-size: cover;
+			background-position: center center;
+		}
+		
+		.form-container {
+			position: relative;
+			z-index: 1;
+			background: rgba(255, 255, 255, 0.8);
+			padding: 80px 40px;
+			border-radius: 100px;
+			margin-top: 50px;
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="form-container" style="text-align:center;">
+		<form method="post">
+			{% csrf_token %}
+			<h1>Master's log in page</h1>
+			<p>log in here</p>
+	
+			<label for="name"><b>username</b></label>
+			<input type="text" placeholder="Enter username" id="username"name="username"><br><br>
+	
+			<label for="password"><b>password</b></label>
+			<input type="password" placeholder="Enter your password" id="password" name="password"><br><br>
+
+			<button type="submit">log in</button>
+		</form>
+		<p>Don't an account? <a href="{% url 'signup' %}"> Sign up</a></p>
+	</div>

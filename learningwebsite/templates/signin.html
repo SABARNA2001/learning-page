@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<style>
+		body {
+			background-image: url('https://image.lexica.art/full_jpg/2864d282-1c29-4032-bb17-2c0aa8b8ff86');
+			background-size: cover;
+			background-position: center center;
+		}
+		
+		.form-container {
+			position: relative;
+			z-index: 1;
+			background: rgba(255, 255, 255, 0.8);
+			padding: 80px 40px;
+			border-radius: 100px;
+			margin-top: 50px;
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="form-container" style="text-align:center;">
+		<form method="post">
+			{% csrf_token %}
+			<h1>login Verification</h1>
+			<p>select one</p>
+	
+            <label for="user-type"><b>login as a:</b></label>
+			<select name="user-type">
+				<option value="student">Student</option>
+				<option value="master">Master</option>
+			</select><br><br>
+            
+			<button type="submit">log in</button>
+		</form>
+        <p>don't have an account? <a href="{% url 'signup' %}"> Sign up</a></p>
+	</div>
+</body>
+</html>
